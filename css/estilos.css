@@ -1,0 +1,164 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+    span{
+        font-family: "Sigmar", sans-serif;
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 4px;
+    }
+
+
+
+
+.navbar-nav .nav-link {
+    position: relative; 
+    text-decoration: none; 
+    color: white; 
+    padding-bottom: 5px; 
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #8C0303; 
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 50%; 
+}
+
+
+@keyframes shadow-pulse-red {
+    0% {
+        text-shadow: 0px 0px 10px rgba(238, 89, 89, 0.8);
+    }
+    50% {
+        text-shadow: 4px 4px 20px rgba(238, 89, 89, 0.8);
+    }
+    100% {
+        text-shadow: 0px 0px 10px rgba(238, 89, 89, 0.8);
+    }
+}
+
+@keyframes shadow-pulse-blue {
+    0% {
+        text-shadow: 0px 0px 10px rgba(99, 131, 233, 0.8);
+    }
+    50% {
+        text-shadow: 4px 4px 20px rgba(99, 131, 233, 0.8);
+    }
+    100% {
+        text-shadow: 0px 0px 10px rgba(99, 131, 233, 0.8);
+    }
+}
+
+
+.red {
+    -webkit-text-fill-color: #8C0303;
+    -webkit-text-stroke: 1px #FFFFFF;
+    text-shadow: 0px 0px 10px rgba(223, 59, 59, 0.8);
+    animation: shadow-pulse-red 1s infinite ease-in-out;
+}
+
+.blue {
+    -webkit-text-fill-color: #033E8C;
+    -webkit-text-stroke: 1px #FFFFFF;
+    text-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+    animation: shadow-pulse-blue 1s infinite ease-in-out;
+}
+
+h2,.spiderman{
+    font-family: "Pacifico", cursive;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(204, 205, 209);
+    letter-spacing: 2px;
+  
+
+}
+.img{
+   box-shadow: -2px 4px 16px -6px rgba(221, 218, 218, 0.75)
+   ;
+
+}
+.spiderman{
+    text-shadow:  3px 3px 4px #BF0413;
+
+}
+.rojo{
+    color: #BF0413;
+}
+.azul{
+    color: #1d59a8;
+}
+#contenedor{
+    background-color: #9c1010;
+}
+i {
+    background-color: #b9091a; 
+    color: #ffffff; 
+    border: 1px solid #ffffff;
+    padding: 7px; 
+    border-radius: 50%; 
+    display: inline-block; 
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(215, 38, 56, 0.4), 0 2px 4px rgba(0, 0, 0, 0.8); 
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+i:hover {
+    background-color: #ffffff; 
+    color: #d72638; 
+    border: 1px solid #d72638;
+    box-shadow: 0 6px 12px rgba(215, 38, 56, 0.6), 0 3px 6px rgba(0, 0, 0, 0.9); 
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.texto{
+    font-size: 12px;
+}
+
+#imagen {
+    border-radius: 20px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    margin-bottom: 10px;
+    
+   
+
+}
+
+
+#escena {
+    font-size: 40px;
+    font-family: "Rubik Wet Paint", system-ui;
+    -webkit-text-fill-color: rgb(112, 0, 0);
+    -webkit-text-stroke: 1px rgb(247, 247, 247);
+    text-shadow: 3px 3px 4px #e9e0e1;
+    animation: shadow-pulse 1s infinite ease-in-out;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        text-shadow: 3px 3px 4px rgb(243, 161, 161); 
+    }
+    50% {
+        text-shadow: 5px 5px 10px rgb(236, 140, 140); 
+    }
+    100% {
+        text-shadow: 3px 3px 4px white; 
+    }
+}
